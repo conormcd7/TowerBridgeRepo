@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactPlayer from 'react-player'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> "hi" </h1>
+      <ReactPlayer
+          className='react-player fixed-bottom'
+          url= 'Animation.mp4'
+          width='25%'
+          height='25%'
+          controls = {true}
+        />
     </div>
   );
 }
