@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Introduction from './components/Introduction';
 import Page1 from './components/Page1';
+import CaissonAnimation from './components/CaissonAnimation';
+import Pano from './components/Pano';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
             <Switch>
              <Route path="/" component={Introduction} exact/>
              <Route path="/Page1" component={Page1}/>
+             <Route path="/CaissonAnimation" component={CaissonAnimation}/>
+             <Route path="/Pano" component={Pano}/>
            </Switch>
         </div> 
       </BrowserRouter>

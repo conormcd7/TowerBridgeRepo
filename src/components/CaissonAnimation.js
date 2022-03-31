@@ -7,14 +7,23 @@ import AnchorIcon from '@mui/icons-material/Anchor';
 
 const CaissonAnimation = () => {
     
-  const mystyle = {
-    color: "#1976d2",
-   //backgroundColor: "lightgray",
-    padding: "0px",
-    fontSize: "40px",
-    font: "Josefin Sans",
-    textAlign: "center"    
-  };
+    const one = {
+        color: "#2c368b",
+        marginTop:"25px", 
+        padding: "0px",
+        fontSize: "15px",
+        fontFamily: "Copperplate",
+        textAlign: "center"    
+      };
+      const mystyle = {
+        color: "#2c368b",
+       //backgroundColor: "lightgray",
+        padding: "0px",
+        fontSize: "30px",
+        width: "80%",
+        fontFamily: "Copperplate",
+        textAlign: "center"    
+      };
   const subText = {
     color: "#43CFEE",
    //backgroundColor: "lightgray",
@@ -33,10 +42,10 @@ const CaissonAnimation = () => {
     width: "80%"
   };
   const buttonStyle = {
-    marginTop:"40px",   
+    marginTop:"100px",   
   };
   const buttonStyle2 = {
-    marginTop:"40px",   
+    marginTop:"100px",   
     marginRight:"5px",
   };
  
@@ -46,15 +55,15 @@ const CaissonAnimation = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {mystyle}> 1.2 North Tower Base Floor</p>
-          <p style = {subText}> Caisson Animation</p>
+        <p style = {one}> 1.2</p>
+          <p style = {mystyle}> North Tower Base Floor: Caisson Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'
           url= 'Animation.mp4'
-          width='100%'
+          width='80%'
           height='25%'
-          playing = {true}
-          loop = {true}
+          controls = {true}
+          
           />
           
           <Link to='/Page1' style={{ textDecoration: 'none' }}>
