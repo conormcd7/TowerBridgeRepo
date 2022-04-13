@@ -40,7 +40,9 @@ const mystyle5 = {
   
 };
 const buttonStyle = {
-  marginTop:"60px",   
+  marginTop:"60px", 
+  backgroundColor:"#2c368b"
+
 };
 const iconStyle = {
     marginTop:"30px",
@@ -63,7 +65,7 @@ const iconStyle = {
          </div>
         
           <img src={pic1} style={mystyle5} alt="pic1" />
-          <Link to='/Page1' style={{ textDecoration: 'none' }}>
+          <Link to='/Overview' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Begin Tour</Button>
           </Link>
         </center>

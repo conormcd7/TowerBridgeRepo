@@ -6,9 +6,12 @@ import pic0 from './WalkwayPhotos/idk.jpg';
 import pic4 from './WalkwayPhotos/1988.jpg';
 import pic2 from './WalkwayPhotos/idk2.jpeg';
 import Button from '@mui/material/Button';
+import Slider from '@mui/material/Slider';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import {Link} from 'react-router-dom'
 import AnchorIcon from '@mui/icons-material/Anchor';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const one = {
     color: "#2c368b",
@@ -46,17 +49,25 @@ const one = {
   };
   const buttonStyle = {
     marginTop:"25px",  
-    marginLeft:"5px"
+    marginLeft:"5px",
+    backgroundColor:"#2c368b"
   };
   const buttonStyle2 = {
     marginTop:"25px",   
     marginLeft:"0px",
+    backgroundColor:"#2c368b"
+  };
+  const buttonStyle3 = {
+    backgroundColor:"#2c368b"
   };
   const sliderStyle = {
-    height: "25px",
     width: "350px",
     marginTop:"200px",
-    marginRight: "0px"
+    marginRight: "0px",
+    color:"#2c368b"
+
+    
+    
   };
   const groupStyle = {
     marginTop:"25px",
@@ -101,8 +112,8 @@ export default class Pano extends React.Component {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> 3.2 </p>
-          <p style = {mystyle}>East Walkway: Skyline Panorama </p>
+          <p style = {one}> 5.2 </p>
+          <p style = {mystyle}>West Walkway: Skyline Panorama </p>
           <div>
             <div className="image-wrapper" style={{position: 'relative'}}>            
                 <img style={{ width: "100%", clip: "rect(0px,"+800+"px ,800px,0px)", position:'absolute', left: "0"}} src={pic3}/>
@@ -113,25 +124,18 @@ export default class Pano extends React.Component {
             </div>
     
         </div>
-        <input
-              style = {sliderStyle}
-              type="range"
-              value={imageIndex}
-              min="0"
-              max="100"
-              onChange={this.setIndex}
-          />
-          <Link to='/CaissonAnimation' style={{ textDecoration: 'none' }}>
-            <Button style={buttonStyle2} variant="contained">Back  </Button>
+        <Slider onChange={this.setIndex} defaultValue={imageIndex} style = {sliderStyle} aria-label="slider" />
+          <Link to='/PanoIntro' style={{ textDecoration: 'none' }}>
+            <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
-          <Link to='/' style={{ textDecoration: 'none' }}>
-            <Button style={buttonStyle} variant="contained">Continue <AnchorIcon /> </Button>
+          <Link to='/Pano2' style={{ textDecoration: 'none' }}>
+            <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
           <ButtonGroup style = {groupStyle} variant="contained" aria-label="outlined primary button group">
-            <Button onClick={this.onClick0}>1751</Button>
-            <Button onClick={this.onClick2}>1897</Button>
-            <Button onClick={this.onClick1}>1905</Button>
-            <Button onClick={this.onClick3}>1988</Button>
+            <Button style={buttonStyle3} onClick={this.onClick0}>1751</Button>
+            <Button style={buttonStyle3} onClick={this.onClick2}>1897</Button>
+            <Button style={buttonStyle3} onClick={this.onClick1}>1905</Button>
+            <Button style={buttonStyle3} onClick={this.onClick3}>1988</Button>
         </ButtonGroup>
         <p> {this.state.imageChoice} </p>
         </center>
@@ -141,3 +145,11 @@ export default class Pano extends React.Component {
   );
 }
 };
+//<input
+              //style = {sliderStyle}
+             // type="range"
+             // value={imageIndex}
+            //  min="0"
+           ///   max="100"
+           //   onChange={this.setIndex}
+         // />

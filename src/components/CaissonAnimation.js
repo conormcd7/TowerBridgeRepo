@@ -3,6 +3,8 @@ import ReactPlayer from 'react-player'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom'
 import AnchorIcon from '@mui/icons-material/Anchor';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 
 const CaissonAnimation = () => {
@@ -43,11 +45,19 @@ const CaissonAnimation = () => {
   };
   const buttonStyle = {
     marginTop:"100px",   
+    backgroundColor:"#2c368b"
+  };
+  const buttonStyleText = {
+    color:"#2c368b",
+
+
   };
   const buttonStyle2 = {
     marginTop:"100px",   
     marginRight:"5px",
+    backgroundColor:"#2c368b"
   };
+  
  
   return (
     
@@ -59,7 +69,7 @@ const CaissonAnimation = () => {
           <p style = {mystyle}> North Tower Base Floor: Caisson Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'
-          url= 'Animation.mp4'
+          url= 'Caisson2.mp4'
           width='80%'
           height='25%'
           controls = {true}
@@ -67,10 +77,14 @@ const CaissonAnimation = () => {
           />
           
           <Link to='/Page1' style={{ textDecoration: 'none' }}>
-            <Button style={buttonStyle2} variant="contained">Back  </Button>
+            <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
-          <Link to='/Pano' style={{ textDecoration: 'none' }}>
-            <Button style={buttonStyle} variant="contained">Continue <AnchorIcon /> </Button>
+          <Link to='/BridgeAnimationIntro' style={{ textDecoration: 'none' }}>
+            <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
+          </Link>
+          <p ></p>
+          <Link to='/CaissonAnimationMore' style={{ textDecoration: 'none' }}>
+            <Button style={buttonStyleText} variant="text">See More  </Button>
           </Link>
         </center>
          

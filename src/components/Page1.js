@@ -1,4 +1,4 @@
-import pic1 from './BridgePhotos/TBridge.JPG';
+import pic1 from './WalkwayPhotos/3posters.jpg';
 import ReactPlayer from 'react-player'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom'
@@ -8,6 +8,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 
 const Page1 = () => {
@@ -48,10 +50,19 @@ const Page1 = () => {
   };
   const buttonStyle = {
     marginTop:"250px",   
+    backgroundColor:"#2c368b"
   };
   const buttonStyle2 = {
     marginTop:"250px",   
     marginRight:"5px",
+    backgroundColor:"#2c368b"
+  };
+  const mystyle5 = {
+    marginTop:"20px", 
+    height:"50%", 
+    width:"50%"
+  
+    
   };
 
  
@@ -73,10 +84,10 @@ const Page1 = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style = {{fontFamily: "EuphemiaUCAS", color: "#2c368b" }}>
-          Enter the musuem and follow the tour guides
-          onto the lift. Once you arrive on the base floor walk straight past the ticket 
-          booth on your right and approach the picture of three caissons
+          Take some time to discover the artifacts, including the diving suit. When you are ready, proceed to the 3 posters shown below. 
+          Continue to the next page to learn more about the caisson construction shown in these posters.
           </Typography>
+          <img src={pic1} style={mystyle5} alt="pic1" />
         </AccordionDetails>
       </Accordion>
       <Accordion style = {{ width: "90%"}}>
@@ -89,18 +100,17 @@ const Page1 = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style= {{fontFamily: "EuphemiaUCAS",color: "#2c368b"}}>
-          These caissons were essential in the creation of the bridge.
-          The construction process was very dangerous and required great care in order to perform
-          safely.
+          The caissons function as the foundations for the main towers. They were constructed out of concrete and a limestone and granite facade above the water. 
+          Their successful construction was crucial to the functionality of the bridge, but the process was very dangerous and required great care to perform safely.
           </Typography>
         </AccordionDetails>
       </Accordion>
       
-          <Link to='/' style={{ textDecoration: 'none' }}>
-            <Button style={buttonStyle2} variant="contained">Back  </Button>
+          <Link to='/' style={{ textDecoration: 'none'}}>
+            <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
           <Link to='/CaissonAnimation' style={{ textDecoration: 'none' }}>
-            <Button style={buttonStyle} variant="contained">Continue <AnchorIcon /> </Button>
+            <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
           
         </center>
