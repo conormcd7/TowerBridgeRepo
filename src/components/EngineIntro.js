@@ -65,8 +65,8 @@ const EngineIntro = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> 6.1</p>
-          <p style = {mystyle}> Engine Room: Boiler</p>
+          <p style = {one}> E 1.1</p>
+          <p style = {mystyle}> Engine Rooms: Boilers</p>
           <Accordion style = {{marginTop: "50px", width: "90%"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

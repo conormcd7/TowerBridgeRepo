@@ -65,7 +65,7 @@ const BridgeAnimationIntro = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> 2.1</p>
+          <p style = {one}> B 2.1</p>
           <p style = {mystyle}> North Tower Stairs: Structure</p>
           <Accordion style = {{marginTop: "50px", width: "90%"}}>
         <AccordionSummary

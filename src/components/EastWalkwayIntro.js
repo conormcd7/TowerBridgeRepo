@@ -65,7 +65,7 @@ const EastWalkwayIntro = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> 4.1</p>
+          <p style = {one}> B 4.1</p>
           <p style = {mystyle}> East Walkway: Structure</p>
           <Accordion style = {{marginTop: "50px", width: "90%"}}>
         <AccordionSummary

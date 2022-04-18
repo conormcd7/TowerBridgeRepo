@@ -58,7 +58,7 @@ const BridgeAnimation = () => {
       
       <div className="Header"  >
         <center>
-        <p style = {one}> 2.2</p>
+        <p style = {one}> B 2.2</p>
           <p style = {mystyle}> North Tower Stairs: Structure Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'

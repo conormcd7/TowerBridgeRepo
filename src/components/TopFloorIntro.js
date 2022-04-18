@@ -65,7 +65,7 @@ const TopFloorIntro = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> 3.1</p>
+          <p style = {one}> B 3.1</p>
           <p style = {mystyle}> North Tower Top Floor: Structure</p>
           <Accordion style = {{marginTop: "50px", width: "90%"}}>
         <AccordionSummary

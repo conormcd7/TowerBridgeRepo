@@ -58,7 +58,7 @@ const TopFloor = () => {
       
       <div className="Header"  >
         <center>
-        <p style = {one}> 3.2</p>
+        <p style = {one}> B 3.2</p>
           <p style = {mystyle}> North Top Floor: Structure Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'

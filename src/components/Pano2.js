@@ -108,7 +108,7 @@ export default class Pano extends React.Component {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> 5.3 </p>
+          <p style = {one}> B 5.3 </p>
           <p style = {mystyle}>West Walkway: Skyline Comparison </p>
           <img style={{ width: "100%", clip: "rect(0px,"+800+"px ,800px,0px)", position:'absolute', left: "0"}} src={pic3}/>
           <div>

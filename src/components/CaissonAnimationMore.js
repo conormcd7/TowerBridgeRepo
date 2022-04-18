@@ -67,7 +67,7 @@ const iconStyle = {
       
         <center>
         <div style = {divStyle}>
-        <p style = {one}> 1.21</p>
+        <p style = {one}> B 1.21</p>
           <p style = {mystyle}> Caissons Diagram</p>
           <img src={pic1} style={mystyle5} alt="pic1" />
          </div>

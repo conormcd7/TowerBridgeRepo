@@ -19,6 +19,13 @@ import EastWalkway from './components/EastWalkway';
 import EastWalkwayIntro from './components/EastWalkwayIntro';
 import Bascule from './components/Bascule';
 import BasculeIntro from './components/BasculeIntro';
+import EngineRoom1 from './components/EngineRoom1';
+import EngineRoom1Intro from './components/EngineRoom1Intro';
+import PanoMore from './components/PanoMore';
+import CoalIntro from './components/CoalIntro';
+import EngineRoom2Intro from './components/EngineRoom2Intro';
+import WaterTankForcePumpIntro from './components/WaterTankForcePumpIntro';
+import ForcePumps from './components/ForcePumps';
 
 class App extends Component {
   render() {
@@ -44,6 +51,13 @@ class App extends Component {
              <Route path="/EastWalkwayIntro" component={EastWalkwayIntro}/>
              <Route path="/Bascule" component={Bascule}/>
              <Route path="/BasculeIntro" component={BasculeIntro}/>
+             <Route path="/EngineRoom1" component={EngineRoom1}/>
+             <Route path="/EngineRoom1Intro" component={EngineRoom1Intro}/>
+             <Route path="/PanoMore" component={PanoMore}/>
+             <Route path="/CoalIntro" component={CoalIntro}/>
+             <Route path="/EngineRoom2Intro" component={EngineRoom2Intro}/>
+             <Route path="/WaterTankForcePumpIntro" component={WaterTankForcePumpIntro}/>
+             <Route path="/ForcePumps" component={ForcePumps}/>
            </Switch>
         </div> 
       </BrowserRouter>

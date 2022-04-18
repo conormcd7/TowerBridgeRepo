@@ -11,7 +11,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
-const PanoIntro = () => {
+
+const WaterTankForcePumpIntro = () => {
     
   const one = {
     color: "#2c368b",
@@ -48,8 +49,8 @@ const PanoIntro = () => {
     width: "80%"
   };
   const buttonStyle = {
-    marginTop:"250px", 
-    backgroundColor:"#2c368b"  
+    marginTop:"250px",   
+    backgroundColor:"#2c368b"
   };
   const buttonStyle2 = {
     marginTop:"250px",   
@@ -64,8 +65,8 @@ const PanoIntro = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> B 5.1</p>
-          <p style = {mystyle}> West Walkway: Skyline</p>
+          <p style = {one}> E 5.1</p>
+          <p style = {mystyle}> Engine Rooms: Water Tank and Force Pumps</p>
           <Accordion style = {{marginTop: "50px", width: "90%"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -76,8 +77,7 @@ const PanoIntro = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style = {{fontFamily: "EuphemiaUCAS", color: "#2c368b" }}>
-          After watching the film at the top of the South Tower, proceed to the West Walkway. 
-          Walk towards the center where the glass floor is and look to your left onto the London Skyline.
+          Continue through the doorway into the next room. This will take you to the water tank and force pumps.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -91,18 +91,17 @@ const PanoIntro = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style= {{fontFamily: "EuphemiaUCAS",color: "#2c368b"}}>
-          You are standing on the West Walkway and looking at the Western London Skyline. 
-          Are you curious what some of these buildings are? View the panorama on your phone and select some of the buildings to learn more about them! Be sure to take lots of pictures to remember the view!
-
+          Whether you look to your left or right, you will see two different components. 
+          Look left for the Force Pumps, the beasts who moved pressurized water through the bridge, and look right for the Water Tank.
 
           </Typography>
         </AccordionDetails>
       </Accordion>
       
-          <Link to='/EastWalkway' style={{ textDecoration: 'none' }}>
+          <Link to='/EngineRoom2Intro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
-          <Link to='/Pano' style={{ textDecoration: 'none' }}>
+          <Link to='/ForcePumps' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
           
@@ -114,4 +113,4 @@ const PanoIntro = () => {
   );
 }
 
-export default PanoIntro;
+export default WaterTankForcePumpIntro;

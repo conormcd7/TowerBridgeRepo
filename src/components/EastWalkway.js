@@ -58,7 +58,7 @@ const EastWalkway = () => {
       
       <div className="Header"  >
         <center>
-        <p style = {one}> 4.2</p>
+        <p style = {one}> B 4.2</p>
           <p style = {mystyle}> East Walkway: Structure Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'

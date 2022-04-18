@@ -115,8 +115,8 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
     
     <div className="Header"  >
         <center>
-          <p style = {one}> 6.2</p>
-          <p style = {mystyle}> Engine Room: Boiler Components</p>
+          <p style = {one}> E 1.2</p>
+          <p style = {mystyle}> Engine Rooms: Boiler Components</p>
           <div style={divStyle}>
           <Button style={buttonStyle4} onClick={this.onClick1}></Button>
           <Button style={buttonStyle3} onClick={this.onClick0}></Button>
@@ -131,7 +131,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
           <Link to='/EngineIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
-          <Link to='/BasculeIntro' style={{ textDecoration: 'none' }}>
+          <Link to='/CoalIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
          

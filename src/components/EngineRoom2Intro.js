@@ -11,7 +11,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
-const PanoIntro = () => {
+
+const EngineRoom2Intro = () => {
     
   const one = {
     color: "#2c368b",
@@ -48,8 +49,8 @@ const PanoIntro = () => {
     width: "80%"
   };
   const buttonStyle = {
-    marginTop:"250px", 
-    backgroundColor:"#2c368b"  
+    marginTop:"250px",   
+    backgroundColor:"#2c368b"
   };
   const buttonStyle2 = {
     marginTop:"250px",   
@@ -64,8 +65,8 @@ const PanoIntro = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> B 5.1</p>
-          <p style = {mystyle}> West Walkway: Skyline</p>
+          <p style = {one}> E 4.1</p>
+          <p style = {mystyle}> Engine Rooms: 2nd Engine</p>
           <Accordion style = {{marginTop: "50px", width: "90%"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -76,8 +77,7 @@ const PanoIntro = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style = {{fontFamily: "EuphemiaUCAS", color: "#2c368b" }}>
-          After watching the film at the top of the South Tower, proceed to the West Walkway. 
-          Walk towards the center where the glass floor is and look to your left onto the London Skyline.
+          Walk through the first engine room into the second. There should be a similar green engine in this room.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -91,18 +91,24 @@ const PanoIntro = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style= {{fontFamily: "EuphemiaUCAS",color: "#2c368b"}}>
-          You are standing on the West Walkway and looking at the Western London Skyline. 
-          Are you curious what some of these buildings are? View the panorama on your phone and select some of the buildings to learn more about them! Be sure to take lots of pictures to remember the view!
+          Take some time to appreciate the engines. Walk around, watch the one that’s moving and try to understand the mechanical components. 
+          Be sure to watch the animations displayed throughout as well to accompany the technical concepts.
 
+          Workers in these rooms likely preferred this 
+          job over the boiler rooms for many reasons.
+          It was cleaner to work in here, and cooler as well. It wasn’t nearly as rancid smelling - 
+          some even described the rooms as sweet-smelling from the oil due to the stark contrast from the coal burning. 
+
+          Press Continue when you have reached the opposite side of the first engine (right before you turn the corner to the right).
 
           </Typography>
         </AccordionDetails>
       </Accordion>
       
-          <Link to='/EastWalkway' style={{ textDecoration: 'none' }}>
+          <Link to='/EngineRoom1' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
-          <Link to='/Pano' style={{ textDecoration: 'none' }}>
+          <Link to='/WaterTankForcePumpIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
           
@@ -114,4 +120,4 @@ const PanoIntro = () => {
   );
 }
 
-export default PanoIntro;
+export default EngineRoom2Intro;

@@ -11,7 +11,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
-const PanoIntro = () => {
+
+const CoalIntro = () => {
     
   const one = {
     color: "#2c368b",
@@ -48,8 +49,8 @@ const PanoIntro = () => {
     width: "80%"
   };
   const buttonStyle = {
-    marginTop:"250px", 
-    backgroundColor:"#2c368b"  
+    marginTop:"250px",   
+    backgroundColor:"#2c368b"
   };
   const buttonStyle2 = {
     marginTop:"250px",   
@@ -64,8 +65,8 @@ const PanoIntro = () => {
       
       <div className="Header"  >
         <center>
-          <p style = {one}> B 5.1</p>
-          <p style = {mystyle}> West Walkway: Skyline</p>
+          <p style = {one}> E 2.1</p>
+          <p style = {mystyle}> Coal Room</p>
           <Accordion style = {{marginTop: "50px", width: "90%"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -76,8 +77,7 @@ const PanoIntro = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style = {{fontFamily: "EuphemiaUCAS", color: "#2c368b" }}>
-          After watching the film at the top of the South Tower, proceed to the West Walkway. 
-          Walk towards the center where the glass floor is and look to your left onto the London Skyline.
+          Continue past the boilers into the next room. There should be a mine cart overhead. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -91,18 +91,17 @@ const PanoIntro = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style= {{fontFamily: "EuphemiaUCAS",color: "#2c368b"}}>
-          You are standing on the West Walkway and looking at the Western London Skyline. 
-          Are you curious what some of these buildings are? View the panorama on your phone and select some of the buildings to learn more about them! Be sure to take lots of pictures to remember the view!
-
-
+          This room is where the excess coal was stored after it was delivered to Portland Wharf. 
+          A two-level system used to exist where the bathrooms are located now - it was able to store up to 200 tons of coal.
+           The upper bunker was accessed via a hydraulic lift and rail cart, which visitors can still see on the right below.
           </Typography>
         </AccordionDetails>
       </Accordion>
       
-          <Link to='/EastWalkway' style={{ textDecoration: 'none' }}>
+          <Link to='/EnginePicture' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
-          <Link to='/Pano' style={{ textDecoration: 'none' }}>
+          <Link to='/EngineRoom1Intro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
           
@@ -114,4 +113,4 @@ const PanoIntro = () => {
   );
 }
 
-export default PanoIntro;
+export default CoalIntro;
