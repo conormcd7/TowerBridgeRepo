@@ -1,13 +1,14 @@
-import pic1 from './BridgePhotos/TBridge.JPG';
 import ReactPlayer from 'react-player'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom'
-import AnchorIcon from '@mui/icons-material/Anchor';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const BridgeAnimation = () => {
     
+    const buttonStyleText = {
+        color:"#2c368b",
+      };
     const one = {
         color: "#2c368b",
         marginTop:"25px", 
@@ -25,23 +26,7 @@ const BridgeAnimation = () => {
         fontFamily: "Copperplate",
         textAlign: "center"    
       };
-  const subText = {
-    color: "#43CFEE",
-   //backgroundColor: "lightgray",
-    padding: "0px",
-    fontSize: "35px",
-    font: "Josefin Sans",
-    textAlign: "center"    
-  };
-  const subText2 = {
-    color: "#43CFEE",
-   //backgroundColor: "lightgray",
-    padding: "0px",
-    fontSize: "22px",
-    font: "Josefin Sans",
-    textAlign: "center",  
-    width: "80%"
-  };
+
   const buttonStyle = {
     marginTop:"100px",   
     backgroundColor:"#2c368b"
@@ -58,11 +43,11 @@ const BridgeAnimation = () => {
       
       <div className="Header"  >
         <center>
-        <p style = {one}> B 2.2</p>
+        <p style = {one}> B 2.21</p>
           <p style = {mystyle}> North Tower Stairs: Structure Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'
-          url= 'Tower.mp4'
+          url= 'Stairs2.mp4'
           width='80%'
           height='25%'
           controls = {true}
@@ -74,6 +59,10 @@ const BridgeAnimation = () => {
           </Link>
           <Link to='/TopFloorIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
+          </Link>
+          <p ></p>
+          <Link to='/NorthTowerStairsMore' style={{ textDecoration: 'none' }}>
+            <Button style={buttonStyleText} variant="text">See More  </Button>
           </Link>
         </center>
          

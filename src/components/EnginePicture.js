@@ -93,24 +93,25 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
     state = {
         partsTitle: "Click on a part to see more information about it.",
         partsDesc: " ",
-        partsImage: whiteBack
+        partsImage: whiteBack,
+        imageSize: "1%"
       }
     onClick1 = (e) => {
-        this.setState({ partsImage: pressureGuage, partsTitle: "Pressure Gauge", partsDesc : "These show the current pressure of the steam in the boiler. Standard working pressure was 75 psi."} );
+        this.setState({ imageSize: "40%", partsImage: pressureGuage, partsTitle: "Pressure Gauge", partsDesc : "These show the current pressure of the steam in the boiler. Standard working pressure was 75 psi."} );
      }
      onClick0  = (e) => {
-        this.setState({ partsImage: pressureReleaseValve, partsTitle: "Pressure Release Valve", partsDesc : "On top of boilers, these act similar to a pressure cooker. They released pressure periodically to maintain proper working pressure. Without these, the pressure could build up uncontrollably and cause an explosion." } );
+        this.setState({ imageSize: "40%", partsImage: pressureReleaseValve, partsTitle: "Pressure Release Valve", partsDesc : "On top of boilers, these act similar to a pressure cooker. They released pressure periodically to maintain proper working pressure. Without these, the pressure could build up uncontrollably and cause an explosion." } );
      }
      onClick3  = (e) => {
-        this.setState({ partsImage: waterGauges, partsTitle: "Water Gauges", partsDesc : "These glass cylinders measure the level of water in the boiler. If water falls below the brass bar, more water must be added to the boiler. "} );
+        this.setState({ imageSize: "40%", partsImage: waterGauges, partsTitle: "Water Gauges", partsDesc : "These glass cylinders measure the level of water in the boiler. If water falls below the brass bar, more water must be added to the boiler. "} );
      }
      onClick2  = (e) => {
-        this.setState({ partsImage: feedPump, partsTitle: "Double Cylinder Feed Water Pump", partsDesc : "Takes in water from the Town water mains for use in the boiler. This machine used to be located in the cellar, and was manufactured by Clarke, Chapman & Co. LTD Gateshead. You can still view the manufacturer’s label on the cylinder."} );
+        this.setState({ imageSize: "40%", partsImage: feedPump, partsTitle: "Double Cylinder Feed Water Pump", partsDesc : "Takes in water from the Town water mains for use in the boiler. This machine used to be located in the cellar, and was manufactured by Clarke, Chapman & Co. LTD Gateshead. You can still view the manufacturer’s label on the cylinder."} );
      }
     
   render(){
     const {partsDesc} = this.state.partsDesc;
-    
+    const {imageSize} = this.state.imageSize;
   return (
     
     <div className="Header"  >
@@ -125,7 +126,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
           <Button style={buttonStyle6} onClick={this.onClick3}></Button>
           </div>
           <p style = {{width: "80%", fontFamily: "EuphemiaUCAS", color: "#2c368b", fontSize: "20px" }}> {this.state.partsTitle}</p>
-          <img src={this.state.partsImage} style={{width: "15%", height: "15%"}} alt="pic1" />
+          <img src={this.state.partsImage} style={{width: this.state.imageSize}} alt="pic1" />
           <p style = {{width: "80%", fontFamily: "EuphemiaUCAS", color: "#2c368b" }}> {this.state.partsDesc}</p>
           
           <Link to='/EngineIntro' style={{ textDecoration: 'none' }}>

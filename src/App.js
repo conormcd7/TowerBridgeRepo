@@ -26,6 +26,17 @@ import CoalIntro from './components/CoalIntro';
 import EngineRoom2Intro from './components/EngineRoom2Intro';
 import WaterTankForcePumpIntro from './components/WaterTankForcePumpIntro';
 import ForcePumps from './components/ForcePumps';
+import WaterTank from './components/WaterTank';
+import EngineerWorkshopIntro from './components/EngineerWorkshopIntro';
+import accumulatorsIntro from './components/accumulatorsIntro';
+import Accumulators from './components/Accumulators';
+import AccumulatorsMore from './components/AccumulatorsMore';
+import BasculePicture from './components/BasculePicture';
+import BasculeMore from './components/BasculeMore';
+import End from './components/End';
+import NorthTowerStairsMore from './components/NorthTowerStairsMore';
+import NorthTowerTopMore from './components/NorthTowerTopMore';
+import EastWalkwayMore from './components/EastWalkwayMore';
 
 class App extends Component {
   render() {
@@ -58,6 +69,17 @@ class App extends Component {
              <Route path="/EngineRoom2Intro" component={EngineRoom2Intro}/>
              <Route path="/WaterTankForcePumpIntro" component={WaterTankForcePumpIntro}/>
              <Route path="/ForcePumps" component={ForcePumps}/>
+             <Route path="/WaterTank" component={WaterTank}/>
+             <Route path="/EngineerWorkshopIntro" component={EngineerWorkshopIntro}/>
+             <Route path="/accumulatorsIntro" component={accumulatorsIntro}/>
+             <Route path="/Accumulators" component={Accumulators}/>
+             <Route path="/AccumulatorsMore" component={AccumulatorsMore}/>
+             <Route path="/BasculePicture" component={BasculePicture}/>
+             <Route path="/BasculeMore" component={BasculeMore}/>
+             <Route path="/End" component={End}/>
+             <Route path="/NorthTowerStairsMore" component={NorthTowerStairsMore}/>
+             <Route path="/NorthTowerTopMore" component={NorthTowerTopMore}/>
+             <Route path="/EastWalkwayMore" component={EastWalkwayMore}/>
            </Switch>
         </div> 
       </BrowserRouter>

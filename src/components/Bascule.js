@@ -58,7 +58,7 @@ const Bascule = () => {
       
       <div className="Header"  >
         <center>
-        <p style = {one}> 7.2</p>
+        <p style = {one}> E 8.2</p>
           <p style = {mystyle}> Engine Room: Bascule Drive Engines Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'
@@ -72,7 +72,7 @@ const Bascule = () => {
           <Link to='/BasculeIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle2} variant="contained">  <ArrowBackIosIcon /> Back  </Button>
           </Link>
-          <Link to='/EngineRoom1Intro' style={{ textDecoration: 'none' }}>
+          <Link to='/BasculePicture' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
         </center>

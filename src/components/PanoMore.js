@@ -1,6 +1,3 @@
-import pic2 from './WalkwayPhotos/icon.png';
-import pic1 from './WalkwayPhotos/more1.png';
-import ReactPlayer from 'react-player'
 import Button from '@mui/material/Button';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -31,37 +28,13 @@ function PanoMore() {
   const mystyle2 = {
     backgroundColor: "#FFFFFF",
   };
-  const mystyle3={
-    backgroundColor: "#2c368b",
-    height: 2,
-    width: "65%"
-}
-const mystyle4 = {
-  color: "#2c368b",
-  fontSize: "25px",
-  textAlign: "center",
-  font: "Josefin Sans",
-  padding: "0px",
 
-  
-};
-const mystyle5 = {
-  marginTop:"0px", 
-  height:"100%", 
-  width:"100%"
-
-  
-};
 const buttonStyle = {
   marginTop:"50px", 
   backgroundColor:"#2c368b"
 
 };
-const iconStyle = {
-    marginTop:"30px",
-    height:"50px",   
-    width:"50px", 
-  };
+
   const divStyle = {
     position: "relative"
   };
@@ -127,11 +100,11 @@ const iconStyle = {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography style = {{fontFamily: "EuphemiaUCAS-Bold", color: "#2c368b"}}>Fenchurch Building - Walkie Talkie</Typography>
+          <Typography style = {{fontFamily: "EuphemiaUCAS-Bold", color: "#2c368b"}}>Fenchurch Building</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography style= {{fontFamily: "EuphemiaUCAS",color: "#2c368b"}}>
-          20 Fenchurch Street, also known as the “Walkie Talkie," started construction in 2009 and was completed in 2014. 
+          0 Fenchurch Street, also known as the “Walkie Talkie," started construction in 2009 and was completed in 2014. 
           It is most famous for melting parts of a Jaguar car parked on the street. 
           The sun’s rays were at a direct angle to cause the car parts to melt.
 
@@ -145,11 +118,11 @@ const iconStyle = {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography style = {{fontFamily: "EuphemiaUCAS-Bold", color: "#2c368b"}}>Leadenhall Building - Cheesegrater</Typography>
+          <Typography style = {{fontFamily: "EuphemiaUCAS-Bold", color: "#2c368b"}}>Leadenhall Building</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography style= {{fontFamily: "EuphemiaUCAS",color: "#2c368b"}}>
-          122 Leadenhall Street was completed in only 1 year and 1 month. 
+          122 Leadenhall Street or Cheesegrater was completed in only 1 year and 1 month. 
           The building looks like a giant Cheesegrater hence the nickname. It is 48 stories tall. 
 
 

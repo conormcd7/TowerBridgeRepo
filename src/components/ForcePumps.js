@@ -88,7 +88,7 @@ const iconStyle = {
          <Link to='/WaterTankForcePumpIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle2} variant="contained"><ArrowBackIosIcon />Back  </Button>
           </Link>
-          <Link to='/ForcePumps' style={{ textDecoration: 'none' }}>
+          <Link to='/WaterTank' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
           </Link>
         </center>

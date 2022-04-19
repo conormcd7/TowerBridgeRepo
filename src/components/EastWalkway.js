@@ -1,13 +1,13 @@
-import pic1 from './BridgePhotos/TBridge.JPG';
 import ReactPlayer from 'react-player'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom'
-import AnchorIcon from '@mui/icons-material/Anchor';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const EastWalkway = () => {
-    
+    const buttonStyleText = {
+        color:"#2c368b",
+      };
     const one = {
         color: "#2c368b",
         marginTop:"25px", 
@@ -25,23 +25,7 @@ const EastWalkway = () => {
         fontFamily: "Copperplate",
         textAlign: "center"    
       };
-  const subText = {
-    color: "#43CFEE",
-   //backgroundColor: "lightgray",
-    padding: "0px",
-    fontSize: "35px",
-    font: "Josefin Sans",
-    textAlign: "center"    
-  };
-  const subText2 = {
-    color: "#43CFEE",
-   //backgroundColor: "lightgray",
-    padding: "0px",
-    fontSize: "22px",
-    font: "Josefin Sans",
-    textAlign: "center",  
-    width: "80%"
-  };
+
   const buttonStyle = {
     marginTop:"100px",   
     backgroundColor:"#2c368b"
@@ -62,7 +46,7 @@ const EastWalkway = () => {
           <p style = {mystyle}> East Walkway: Structure Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'
-          url= 'Walkways.mp4'
+          url= 'Walkway2.mp4'
           width='80%'
           height='25%'
           controls = {true}
@@ -74,6 +58,10 @@ const EastWalkway = () => {
           </Link>
           <Link to='/PanoIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
+          </Link>
+          <p ></p>
+          <Link to='/EastWalkwayMore' style={{ textDecoration: 'none' }}>
+            <Button style={buttonStyleText} variant="text">See More  </Button>
           </Link>
         </center>
          

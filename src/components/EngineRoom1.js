@@ -144,7 +144,7 @@ import { LineWeight } from '@mui/icons-material';
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "flex-start"
     
   };
 
@@ -152,36 +152,38 @@ import { LineWeight } from '@mui/icons-material';
     state = {
         partsTitle: "Click on a part to see more information about it.",
         partsDesc: " ",
-        partsImage: whiteBack
+        partsImage: whiteBack,
+        imageSize: "1%"
+        
       }
     onClick1 = (e) => {
-        this.setState({ partsImage: flyWheel, partsTitle: "Fly Wheel", partsDesc : "A massive, heavy wheel used in machinery to help the machine gain momentum and store more energy. In this application, it helped to regulate the motion of the pistons and crank pins, so they don’t move too fast. This wheel rotated at 15-18 rotations per minute (RPM)  at 360 horsepower."} );
+        this.setState({  imageSize: "40%", partsImage: flyWheel, partsTitle: "Fly Wheel", partsDesc : "A massive, heavy wheel used in machinery to help the machine gain momentum and store more energy. In this application, it helped to regulate the motion of the pistons and crank pins, so they don’t move too fast. This wheel rotated at 15-18 rotations per minute (RPM)  at 360 horsepower."} );
      }
      onClick2  = (e) => {
-        this.setState({ partsImage: counter, partsTitle: "Rotation Counter", partsDesc : "Counts the number of rotations of the flywheel via a mechanical system. It has been reset multiple times - whenever the wheel reaches 9,999,999 rotations! This counter is titled a Harding’s Improved Counter, an established name in counters which specifically measure the number of rotations of wheels and pistons in stationary steam engines."} );
+        this.setState({ imageSize: "40%", partsImage: counter, partsTitle: "Rotation Counter", partsDesc : "Counts the number of rotations of the flywheel via a mechanical system. It has been reset multiple times - whenever the wheel reaches 9,999,999 rotations! This counter is titled a Harding’s Improved Counter, an established name in counters which specifically measure the number of rotations of wheels and pistons in stationary steam engines."} );
      }
      onClick3  = (e) => {
-        this.setState({ partsImage: steamGov, partsTitle: "SteamGovernor", partsDesc : "A mechanism that controls the speed of the engines by regulating the flow of steam. It acts as a safety feature that controls the speed of the flywheel. If the flywheel rotates too fast, centrifugal force drives the rods out and down which closes the steam valve and shuts the engine down." } );
+        this.setState({ imageSize: "40%", partsImage: steamGov, partsTitle: "SteamGovernor", partsDesc : "A mechanism that controls the speed of the engines by regulating the flow of steam. It acts as a safety feature that controls the speed of the flywheel. If the flywheel rotates too fast, centrifugal force drives the rods out and down which closes the steam valve and shuts the engine down." } );
      }
      onClick4  = (e) => {
-        this.setState({ partsImage: rightCrankPin, partsTitle: "Right Crank Pin", partsDesc : "Similar to the left crank pin, this pin operates both a piston and a machine in the cellar, in this case the circulating pump. This pump pulled river water into a reservoir below the south abutment at high tide to cool the steam in the condenser. Condensed water was returned to the boilers for reuse, and the water in the reservoir was flushed out at low tide."} );
+        this.setState({ imageSize: "40%", partsImage: rightCrankPin, partsTitle: "Right Crank Pin", partsDesc : "Similar to the left crank pin, this pin operates both a piston and a machine in the cellar, in this case the circulating pump. This pump pulled river water into a reservoir below the south abutment at high tide to cool the steam in the condenser. Condensed water was returned to the boilers for reuse, and the water in the reservoir was flushed out at low tide."} );
      }
      onClick5  = (e) => {
-        this.setState({ partsImage: leftCrankPin, partsTitle: "Left Crank Pin", partsDesc : "This pin operates one piston and is also connected to the air pump, which pulls steam down out of the low-pressure cylinders en route to the condenser. Both of these components are in the cellar."} );
+        this.setState({ imageSize: "40%", partsImage: leftCrankPin, partsTitle: "Left Crank Pin", partsDesc : "This pin operates one piston and is also connected to the air pump, which pulls steam down out of the low-pressure cylinders en route to the condenser. Both of these components are in the cellar."} );
      }
      onClick6  = (e) => {
-        this.setState({ partsImage: pressureCylinders, partsTitle: "Pressure Cylinders", partsDesc : "Steam is pumped into the smaller cylinder, the High Pressure cylinder, which pushes the plate on the piston to move the system back and forth. Steam moves into the Low pressure cylinder (LP) - the bigger cylinder - to use the energy of the steam twice in the piston again. You will get a better view of these as you move through the engine rooms."} );
+        this.setState({ imageSize: "40%", partsImage: pressureCylinders, partsTitle: "Pressure Cylinders", partsDesc : "Steam is pumped into the smaller cylinder, the High Pressure cylinder, which pushes the plate on the piston to move the system back and forth. Steam moves into the Low pressure cylinder (LP) - the bigger cylinder - to use the energy of the steam twice in the piston again. You will get a better view of these as you move through the engine rooms."} );
      }
      onClick7  = (e) => {
-        this.setState({ partsImage: canisters, partsTitle: "Self-oiling Canisters", partsDesc : "These glass jars are filled with oil to automatically oil each component - they may have been filled with whale oil during original operation.These are still functional today and continue to lubricate the components during the electric operation. The engines are still operated today to prevent the components from siezing up and never moving again."} );
+        this.setState({ imageSize: "40%", partsImage: canisters, partsTitle: "Self-oiling Canisters", partsDesc : "These glass jars are filled with oil to automatically oil each component - they may have been filled with whale oil during original operation.These are still functional today and continue to lubricate the components during the electric operation. The engines are still operated today to prevent the components from siezing up and never moving again."} );
      }
      onClick8  = (e) => {
-        this.setState({ partsImage: label, partsTitle: "Manufacturer's Label and Paint", partsDesc : "This is the manufacturer’s label of Sir William Armstrong. It has been removed from the second engine, so this is the last one that remains. The engines are continually repainted to their original colors to preserve their historic beauty and to prevent rusting. The green, red, and black color scheme matches that of Armstrong’s family crest."} );
+        this.setState({ imageSize: "40%", partsImage: label, partsTitle: "Manufacturer's Label and Paint", partsDesc : "This is the manufacturer’s label of Sir William Armstrong. It has been removed from the second engine, so this is the last one that remains. The engines are continually repainted to their original colors to preserve their historic beauty and to prevent rusting. The green, red, and black color scheme matches that of Armstrong’s family crest."} );
      }
     
   render(){
     const {partsDesc} = this.state.partsDesc;
-    
+    const {imageSize} = this.state.imageSize;
   return (
     
     <div className="Header"  >
@@ -201,7 +203,7 @@ import { LineWeight } from '@mui/icons-material';
          
           </div>
           <p style = {{width: "80%", fontFamily: "EuphemiaUCAS", color: "#2c368b", fontSize: "20px" }}> {this.state.partsTitle}</p>
-          <img src={this.state.partsImage} style={{width: "35%", height: "35%"}} alt="pic1" />
+          <img src={this.state.partsImage} style={{width: this.state.imageSize}} alt="pic1" />
           <p style = {{width: "80%", fontFamily: "EuphemiaUCAS", color: "#2c368b" }}> {this.state.partsDesc}</p>
           
           <Link to='/EngineRoom1Intro' style={{ textDecoration: 'none' }}>

@@ -1,13 +1,15 @@
-import pic1 from './BridgePhotos/TBridge.JPG';
+
 import ReactPlayer from 'react-player'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom'
-import AnchorIcon from '@mui/icons-material/Anchor';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const TopFloor = () => {
     
+    const buttonStyleText = {
+        color:"#2c368b",
+      };
     const one = {
         color: "#2c368b",
         marginTop:"25px", 
@@ -25,23 +27,8 @@ const TopFloor = () => {
         fontFamily: "Copperplate",
         textAlign: "center"    
       };
-  const subText = {
-    color: "#43CFEE",
-   //backgroundColor: "lightgray",
-    padding: "0px",
-    fontSize: "35px",
-    font: "Josefin Sans",
-    textAlign: "center"    
-  };
-  const subText2 = {
-    color: "#43CFEE",
-   //backgroundColor: "lightgray",
-    padding: "0px",
-    fontSize: "22px",
-    font: "Josefin Sans",
-    textAlign: "center",  
-    width: "80%"
-  };
+  
+
   const buttonStyle = {
     marginTop:"100px",   
     backgroundColor:"#2c368b"
@@ -58,11 +45,11 @@ const TopFloor = () => {
       
       <div className="Header"  >
         <center>
-        <p style = {one}> B 3.2</p>
+        <p style = {one}> B 3.21</p>
           <p style = {mystyle}> North Top Floor: Structure Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'
-          url= 'Bridge.mp4'
+          url= 'Floor2.mp4'
           width='80%'
           height='25%'
           controls = {true}
@@ -74,6 +61,10 @@ const TopFloor = () => {
           </Link>
           <Link to='/EastWalkwayIntro' style={{ textDecoration: 'none' }}>
             <Button style={buttonStyle} variant="contained">Continue <ArrowForwardIosIcon /> </Button>
+          </Link>
+          <p ></p>
+          <Link to='/NorthTowerTopMore' style={{ textDecoration: 'none' }}>
+            <Button style={buttonStyleText} variant="text">See More  </Button>
           </Link>
         </center>
          
