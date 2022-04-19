@@ -49,8 +49,6 @@ const CaissonAnimation = () => {
   };
   const buttonStyleText = {
     color:"#2c368b",
-
-
   };
   const buttonStyle2 = {
     marginTop:"100px",   
