@@ -1,4 +1,3 @@
-
 import ReactPlayer from 'react-player'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom'
@@ -7,17 +6,11 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const TopFloor = () => {
     
-    const buttonStyleText = {
-        color:"#2c368b",
-      };
-    const one = {
-        color: "#2c368b",
-        marginTop:"25px", 
-        padding: "0px",
-        fontSize: "15px",
-        fontFamily: "Copperplate",
-        textAlign: "center"    
-      };
+  const buttonStyleText = {
+    color:"#2c368b",
+    borderColor:"#2c368b"
+  };
+ 
       const mystyle = {
         color: "#2c368b",
        //backgroundColor: "lightgray",
@@ -45,8 +38,8 @@ const TopFloor = () => {
       
       <div className="Header"  >
         <center>
-        <p style = {one}> B 3.21</p>
-          <p style = {mystyle}> North Top Floor: Structure Animation</p>
+      
+          <p style = {mystyle}> North Tower Level 4: Structure Animation</p>
           <ReactPlayer
           className='react-player fixed-bottom'
           url= 'Floor2.mp4'
@@ -64,7 +57,7 @@ const TopFloor = () => {
           </Link>
           <p ></p>
           <Link to='/NorthTowerTopMore' style={{ textDecoration: 'none' }}>
-            <Button style={buttonStyleText} variant="text">See More  </Button>
+            <Button style={buttonStyleText} variant="outlined">Additional Information  </Button>
           </Link>
         </center>
          
